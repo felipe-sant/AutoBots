@@ -10,7 +10,7 @@
 
 <br>
 
-O projeto consiste em criar um sistema de microserviços utilizando java
+O projeto consiste em criar um sistema de <strong>microserviços</strong> utilizando java.
 
 ## 🕓 Status
 
