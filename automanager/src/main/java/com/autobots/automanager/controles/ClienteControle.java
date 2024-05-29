@@ -25,19 +25,19 @@ public class ClienteControle {
 	@Autowired
 	private ClienteSelecionador selecionador;
 
-	@GetMapping("/cliente/{id}")
+	@GetMapping("/listar/{id}")
 	public Cliente obterCliente(@PathVariable long id) {
 		List<Cliente> clientes = repositorio.findAll();
 		return selecionador.selecionar(clientes, id);
 	}
 
-	@GetMapping("/clientes")
+	@GetMapping("/listar")
 	public List<Cliente> obterClientes() {
 		List<Cliente> clientes = repositorio.findAll();
 		return clientes;
 	}
 
-	@PostMapping("/cadastro")
+	@PostMapping("/cadastrar")
 	public void cadastrarCliente(@RequestBody Cliente cliente) {
 		repositorio.save(cliente);
 	}
