@@ -55,7 +55,7 @@ public class EnderecoControle {
 		}
 	}
 	
-	@PostMapping("endereco/cadastro")
+	@PostMapping("/endereco/cadastro")
 	public ResponseEntity<?> cadastrarEndereco(@RequestBody Endereco endereco) {
 		HttpStatus status = HttpStatus.CONFLICT;
 		if (endereco.getId() == null) {
